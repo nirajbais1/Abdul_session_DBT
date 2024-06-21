@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: data_ingestion
+    database: bigquery-demo-356213  
+    schema: sports  
+    tables:
+      - name: meets
+      - name: powerlifting
