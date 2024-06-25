@@ -34,6 +34,14 @@ models:
   bigquery_demo:
     # Config indicated by + and applies to all files under models/example/
     Raw_Layer:
-      +materialized: table
+      +materialized: view
+      +schema: Raw
     Transformation_Layer:
+      +materialized: view
+      +schema: Transformation
+    Aggregation_Layer: 
+      +materialized: view
+      +schema: Aggregation
+    DataVault_Layer: 
       +materialized: table
+      +schema: DataVault
